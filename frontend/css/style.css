@@ -1,0 +1,158 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F7F8F9;
+}
+
+.content {
+  width: 65%;
+  margin: 30px auto;
+  /* margin-top: 30px; */
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 95%;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  padding: 20px;
+  filter: drop-shadow(-1px 1px 3px rgba(210, 210, 210, 0.10)) drop-shadow(1px -1px 3px rgba(210, 210, 210, 0.10));
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.card__button {
+  width: 150px;
+  height: 35px;
+  background-color: #FFDB4D;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease-out;
+}
+
+.card__button:hover {
+  background-color: #F3CE39;
+}
+
+.card__button:active {
+  transition: 1s;
+  background-color: #E5BE21;
+}
+
+.delimiter {
+  height: 1px;
+  background-color: rgba(210, 210, 210, 0.3);
+}
+
+/* Header */
+
+header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.5);
+  height: 60px;
+  width: 100%;
+}
+
+.header__info {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  left: 0;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.header__navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black
+}
+
+@media (max-width: 1000px) {
+  .header__info {
+    width: 95%;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    height: 80px;
+    padding: 10px;
+  }
+  .header__title {
+    position: relative;
+    margin-top: 10px;
+  }
+  .header__info {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header__navigation ul {
+    gap: 10px;
+  }
+  .nav-title {
+    font-size: 18px;
+  }
+}

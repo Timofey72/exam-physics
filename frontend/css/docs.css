@@ -1,0 +1,52 @@
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.paragraph__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.topics-list {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  padding: 7px 0;
+}
+
+.topic-link {
+  color: #0d51ff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.topic-link::before {
+  content: '\2022';
+  color: #0d51ff;
+  display: inline-block;
+  width: 10px;
+  margin-left: 5px;
+}
+
+.resources-card {
+  position: relative;
+}
+
+.info-text {
+  font-size: 11px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+.info-text a {
+  text-decoration: none;
+  color: #0d51ff;
+}

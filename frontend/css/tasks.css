@@ -1,0 +1,56 @@
+.topic-subtitle {
+  color: #BFBFBF;
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.topic {
+  max-width: 700px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.topic-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topic-title h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.topic-content p {
+  padding: 3px 20px;
+}
+
+.topic-content a {
+  text-decoration: none;
+  color: #0D51FF;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.tasks-list {
+  padding: 3px 0;
+}
+
+.topic-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.active   {
+  max-height: 300px;
+}
+
+.arrow-up svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.2s linear;
+}

@@ -1,0 +1,66 @@
+.info-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+
+.formulas-card {
+  width: 70%;
+}
+
+.exam-info-card {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .info-cards {
+    flex-direction: column;
+  }
+  .formulas-card {
+    width: 100%;
+  }
+  
+  .exam-info-card {
+    width: 100%;
+  }
+}
+
+.info-block {
+  padding: 8px 0;
+}
+
+.info-card__title {
+  color: #1C6CE3;
+}
+
+.info-card__subtitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-card__text .grey {
+  color: #929292;
+  font-weight: 400;
+}
+
+.info-card__text {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.formulas-list {
+  display: grid;
+  padding: 6px 0;
+}
+
+.formulas-list .topic {
+  margin: 4px;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0D51FF;
+}
+
