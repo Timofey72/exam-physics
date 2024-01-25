@@ -1,0 +1,52 @@
+{% extends 'exam/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>ЕГЭ - Материалы для успешной подготовке к ЕГЭ по физике</title>
+<link rel="stylesheet" href="{% static 'exam/css/docs.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="cards">
+  <div class="card main-card">
+    <h2 class="card__title">Физика для ЕГЭ: Материалы</h2>
+    <p class="card__text">Здесь собраны материалы для подготовки к ЕГЭ. Информация взята с различных источников.
+      Выберите из перечня нужную тему, и перейдите по ссылке для ее изучения.</p>
+  </div>
+  <div class="card resources-card">
+    <h2 class="card__title">Каталог тем</h2>
+
+    <div class="paragraphs">
+      <div class="paragraph">
+        <h3 class="paragraph__title">Механика</h3>
+        <ul class="topics-list">
+          <a target="_blank" href="#" class="topic-link">Механическое движение</a>
+          <a target="_blank" href="#" class="topic-link">Масса и плотность</a>
+          <a target="_blank" href="#" class="topic-link">Второй и третий законы Ньютона</a>
+        </ul>
+      </div>
+      <div class="paragraph">
+        <h3 class="paragraph__title">Молекулярная физика и термодинамика</h3>
+        <ul class="topics-list">
+          <a target="_blank" href="#" class="topic-link">Механическое движение</a>
+          <a target="_blank" href="#" class="topic-link">Масса и плотность</a>
+          <a target="_blank" href="#" class="topic-link">Второй и третий законы Ньютона</a>
+        </ul>
+      </div>
+      <div class="paragraph">
+        <h3 class="paragraph__title">Электричество</h3>
+        <ul class="topics-list">
+          <a target="_blank" href="#" class="topic-link">Механическое движение</a>
+          <a target="_blank" href="#" class="topic-link">Масса и плотность</a>
+          <a target="_blank" href="#" class="topic-link">Второй и третий законы Ньютона</a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-text">*вся информация взята с ресурса: <a target="_blank"
+        href="https://ege-study.ru/ru/ege/materialy/fizika/">https://ege-study.ru/ru/ege/materialy/fizika/</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

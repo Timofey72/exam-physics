@@ -1,0 +1,30 @@
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.option_button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #CDCDCD;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: background-color 0.25s ease;
+}
+
+.option_button:hover {
+  background-color: #ECEBEB;
+}
+
+.option_button:active {
+  background-color: #DBDBDB;
+}

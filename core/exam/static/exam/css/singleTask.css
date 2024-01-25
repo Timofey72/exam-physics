@@ -1,0 +1,74 @@
+.task__image {
+  width: 250px;
+}
+
+@media (max-width: 400px) {
+  .task__image {
+    width: 200px;
+  }
+}
+
+.answer {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.answer-input {
+  width: 100%;
+  height: 35px;
+  background-color: #ECEEF2;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.answer-input::placeholder {
+  color: #C5C5C5;
+}
+
+.answer-input:focus {
+  outline: none;
+  border: 2px solid #FFDB4D;
+  padding: 10px 13px;
+}
+
+.answer-uncorrect {
+  border: 2px solid #FF0000;
+  padding: 10px 13px;
+}
+
+.answer-correct {
+  border: 2px solid #05FF00;
+  padding: 10px 13px;
+}
+
+.check-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.toggle-answer {
+  width: 110px;
+  color: #0D51FF;
+  cursor: pointer;
+  user-select: none;
+}
+
+.full-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  
+}
+
+.active {
+  max-height: 50px;
+}
