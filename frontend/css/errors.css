@@ -1,0 +1,23 @@
+.error {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.error__code {
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.error__title {
+  font-size: 30px;
+  margin: 10px 0 5px 0;
+}
+
+.error__description {
+  font-size: 14px;
+}
+
+.error__description a {
+  text-decoration: none;
+  color: #0d51ff;
+}

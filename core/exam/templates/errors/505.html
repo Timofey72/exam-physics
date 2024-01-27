@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>ЕГЭ - Произошла ошибка 500</title>
+<link rel="stylesheet" href="{% static 'exam/css/errors.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="error">
+    <h3 class="error__code">500</h3>
+    <h2 class="error__title">Произошла ошибка!</h2>
+    <p class="error__description">Перезагрузите страницу, подождите несколько минут или перейдите на <a href="{% url 'index' %}">главную
+        страницу</a></p>
+</div>
+{% endblock %}
+
+

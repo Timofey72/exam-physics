@@ -1,8 +1,8 @@
-{% extends 'exam/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block head %}
-<title>ЕГЭ - Задание №{{ task_id }} из ЕГЭ</title>
+<title>ЕГЭ - Задание №{{ task.id }} из ЕГЭ</title>
 <link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
 <script defer src="{% static 'exam/js/singleTask.js' %}"></script>
 {% endblock %}
@@ -10,17 +10,16 @@
 {% block content %}
 <div class="cards">
   <div class="card main-card">
-    <h2 class="card__title">Задание №{{ task_id }}</h2>
-    <p class="card__text">На рисунке показан график зависимости от времени для проекции скорости тела. Какова проекция
-      aₓ ускорения этого тела в интервале времени от 5 до 6 c?</p>
-    <img class="task__image" src="{% static 'exam/images/task.png' %}" alt="task">
+    <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
+    <p class="card__text">{{ task.description }}</p>
+    <img class="task__image" src="{{ task.image.url }}" alt="task">
     <div class="answer">
       <input type="text" class="answer-input" placeholder="Ответ">
       <a href="#tasks" class="card__button answer-button">Проверить</a>
     </div>
     <div class="check-answer">
       <span class="toggle-answer">Показать ответ</span>
-      <span class="full-answer">14</span>
+      <span class="full-answer">{{ task.correct_answer }}</span>
     </div>
   </div>
 </div>

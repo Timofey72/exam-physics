@@ -24,6 +24,8 @@ urlpatterns = [
     path('', include('exam.urls')),
 ]
 
+handler404 = 'exam.views.handler404'
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

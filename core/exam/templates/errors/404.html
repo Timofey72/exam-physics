@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>ЕГЭ - Страница не найдена 404</title>
+<link rel="stylesheet" href="{% static 'exam/css/errors.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="error">
+    <h3 class="error__code">404</h3>
+    <h2 class="error__title">Страница не найдена!</h2>
+    <p class="error__description">Проверьте корректность ссылки или вернитесь на <a href="{% url 'index' %}">главную страницу</a></p>
+</div>
+{% endblock %}
