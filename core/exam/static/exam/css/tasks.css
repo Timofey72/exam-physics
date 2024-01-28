@@ -43,8 +43,8 @@
   transition: max-height 0.5s ease;
 }
 
-.active   {
-  max-height: 300px;
+.active {
+  max-height: 1000px;
 }
 
 .arrow-up svg {
