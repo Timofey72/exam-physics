@@ -2,25 +2,28 @@
 {% load static %}
 
 {% block head %}
-<title>ЕГЭ - Задание №{{ task.id }} из ЕГЭ</title>
-<link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
-<script defer src="{% static 'exam/js/singleTask.js' %}"></script>
+    <title>ЕГЭ - Задание №{{ task.id }} из ЕГЭ</title>
+    <link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
+    <script defer src="{% static 'exam/js/singleTask.js' %}"></script>
 {% endblock %}
 
 {% block content %}
-<div class="cards">
-  <div class="card main-card">
-    <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
-    <p class="card__text">{{ task.description }}</p>
-    <img class="task__image" src="{{ task.image.url }}" alt="task">
-    <div class="answer">
-      <input type="text" class="answer-input" placeholder="Ответ">
-      <a href="#tasks" class="card__button answer-button">Проверить</a>
+    <div class="cards">
+        <div class="card main-card">
+            <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
+            <p class="card__text">{{ task.description }}</p>
+
+            {% if task.image %}
+                <img class="task__image" src="{{ task.image.url }}" alt="task">
+            {% endif %}
+            <div class="answer">
+                <input type="text" class="answer-input" placeholder="Ответ">
+                <a href="#tasks" class="card__button answer-button">Проверить</a>
+            </div>
+            <div class="check-answer">
+                <span class="toggle-answer">Показать ответ</span>
+                <span class="full-answer">{{ task.correct_answer }}</span>
+            </div>
+        </div>
     </div>
-    <div class="check-answer">
-      <span class="toggle-answer">Показать ответ</span>
-      <span class="full-answer">{{ task.correct_answer }}</span>
-    </div>
-  </div>
-</div>
 {% endblock %}
