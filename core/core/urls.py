@@ -29,6 +29,10 @@ urlpatterns = [
 handler404 = 'exam.views.handler404'
 handler500 = 'exam.views.handler500'
 
+admin.site.site_header = "Панель администратора"
+admin.site.site_title = "Административная панель"
+admin.site.index_title = "Добро пожаловать в панель администратора!"
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
