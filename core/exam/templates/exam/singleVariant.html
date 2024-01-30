@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
     <link rel="stylesheet" href="{% static 'exam/css/singleOption.css' %}">
     <script defer src="{% static 'exam/js/singleOption.js' %}"></script>
+    <script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -22,7 +23,7 @@
                 {% endif %}
                 <div class="answer">
                     <input type="text" class="answer-input" placeholder="Ответ">
-                    <a href="#" class="card__button answer-button">Проверить</a>
+                    <button class="card__button answer-button">Проверить</button>
                 </div>
                 <div class="check-answer">
                     <span class="toggle-answer">Показать ответ</span>
