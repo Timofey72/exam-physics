@@ -4,12 +4,14 @@
 {% block head %}
 <title>ЕГЭ - Платформа для подготовки к ЕГЭ по физике</title>
 <link rel="stylesheet" href="{% static 'exam/css/index.css' %}">
+<meta name="description"
+  content="У нас вы найдете все для эффективной подготовки: разнообразные задачи, варианты, а также полезные материалы и формулы. Решайте задачи, оттачивайте навыки, и уверенно шагайте к успешному сдаче экзамена. Вместе с нами подготовка становится интересной и результативной. Присоединяйтесь к нам для эффективной подготовки и уверенности на экзамене.">
 {% endblock %}
 
 {% block content %}
 <div class="cards">
   <div class="card main-card">
-    <h2 class="card__title">Подготовка к ЕГЭ по физике</h2>
+    <h1 class="card__title">Подготовка к ЕГЭ по физике</h1>
     <p class="card__text">У нас вы найдете все для эффективной подготовки: разнообразные задачи, варианты, а
       также полезные материалы и формулы. Решайте задачи, оттачивайте навыки, и уверенно шагайте к успешному сдаче
       экзамена. Вместе с нами подготовка становится интересной и результативной. Присоединяйтесь к нам для
@@ -22,9 +24,9 @@
       <p class="card__text">Все формулы на разные темы для успешной сдачи ЕГЭ</p>
       <div class="delimiter"></div>
       <div class="formulas-list">
-          {% for category in formula_categories %}
-              <a href="{% url 'formulas' %}" class="topic">{{ forloop.counter }}. {{ category.title }}</a>
-          {% endfor %}
+        {% for category in formula_categories %}
+        <a href="{% url 'formulas' %}" class="topic">{{ forloop.counter }}. {{ category.title }}</a>
+        {% endfor %}
       </div>
       <a href="{% url 'formulas' %}" class="card__button">Больше формул</a>
     </div>

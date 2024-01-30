@@ -2,36 +2,38 @@
 {% load static %}
 
 {% block head %}
-    <title>ЕГЭ - Тренировочный вариант №{{ variant.variant_number }}</title>
-    <link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
-    <link rel="stylesheet" href="{% static 'exam/css/singleOption.css' %}">
-    <script defer src="{% static 'exam/js/singleOption.js' %}"></script>
-    <script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
+<title>ЕГЭ - Тренировочный вариант №{{ variant.variant_number }}</title>
+<link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
+<link rel="stylesheet" href="{% static 'exam/css/singleOption.css' %}">
+<script defer src="{% static 'exam/js/singleOption.js' %}"></script>
+<script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
+<meta name="description"
+    content="Вариант №{{ variant.variant_number }}. В нем собраны различные задания в стиле ЕГЭ для тренировки своих знаний.">
 {% endblock %}
 
 {% block content %}
-    <div class="cards">
-        <div class="card main-card">
-            <h2 style="padding: 0;" class="card__title">Вариант №{{ variant.variant_number }}</h2>
-        </div>
-        {% for task in variant.tasks.all %}
-            <div class="card">
-                <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
-                <p class="card__text">{{ task.description }}</p>
-                {% if task.image %}
-                    <img class="task__image" src="{{ task.image.url }}" alt="task">
-                {% endif %}
-                <div class="answer">
-                    <input type="text" class="answer-input" placeholder="Ответ">
-                    <button class="card__button answer-button">Проверить</button>
-                </div>
-                <div class="check-answer">
-                    <span class="toggle-answer">Показать ответ</span>
-                    <span class="full-answer">{{ task.correct_answer }}</span>
-                </div>
-            </div>
-        {% endfor %}
+<div class="cards">
+    <div class="card main-card">
+        <h1 style="padding: 0;" class="card__title">Вариант №{{ variant.variant_number }}</h1>
     </div>
+    {% for task in variant.tasks.all %}
+    <div class="card">
+        <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
+        <p class="card__text">{{ task.description }}</p>
+        {% if task.image %}
+        <img class="task__image" src="{{ task.image.url }}" alt="task">
+        {% endif %}
+        <div class="answer">
+            <input type="text" class="answer-input" placeholder="Ответ">
+            <button class="card__button answer-button">Проверить</button>
+        </div>
+        <div class="check-answer">
+            <span class="toggle-answer">Показать ответ</span>
+            <span class="full-answer">{{ task.correct_answer }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
-    <h3 class="info-text">Нажмите кнопку “Проверить” у задания, чтобы посмотреть результат</h3>
+<h3 class="info-text">Нажмите кнопку “Проверить” у задания, чтобы посмотреть результат</h3>
 {% endblock %}

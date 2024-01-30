@@ -2,29 +2,30 @@
 {% load static %}
 
 {% block head %}
-    <title>ЕГЭ - Задание №{{ task.id }} из ЕГЭ</title>
-    <link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
-    <script defer src="{% static 'exam/js/singleTask.js' %}"></script>
-    <script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
+<title>ЕГЭ - Задание №{{ task.id }} из ЕГЭ</title>
+<link rel="stylesheet" href="{% static 'exam/css/singleTask.css' %}">
+<script defer src="{% static 'exam/js/singleTask.js' %}"></script>
+<script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
+<meta name="description" content="Тип задания: {{ task.type }}. {{ task.description }}">
 {% endblock %}
 
 {% block content %}
-    <div class="cards">
-        <div class="card main-card">
-            <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
-            <p class="card__text">{{ task.description }}</p>
+<div class="cards">
+    <div class="card main-card">
+        <h1 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h1>
+        <p class="card__text">{{ task.description }}</p>
 
-            {% if task.image %}
-                <img class="task__image" src="{{ task.image.url }}" alt="task">
-            {% endif %}
-            <div class="answer">
-                <input type="text" class="answer-input" placeholder="Ответ">
-                <button class="card__button answer-button">Проверить</button>
-            </div>
-            <div class="check-answer">
-                <span class="toggle-answer">Показать ответ</span>
-                <span class="full-answer">{{ task.correct_answer }}</span>
-            </div>
+        {% if task.image %}
+        <img class="task__image" src="{{ task.image.url }}" alt="task">
+        {% endif %}
+        <div class="answer">
+            <input type="text" class="answer-input" placeholder="Ответ">
+            <button class="card__button answer-button">Проверить</button>
+        </div>
+        <div class="check-answer">
+            <span class="toggle-answer">Показать ответ</span>
+            <span class="full-answer">{{ task.correct_answer }}</span>
         </div>
     </div>
+</div>
 {% endblock %}
