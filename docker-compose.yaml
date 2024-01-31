@@ -9,6 +9,8 @@ services:
       - 8000
     volumes:
       - media-data:/vol/media
+    networks:
+      - djangonetwork
     depends_on:
       - db
   db:
@@ -17,6 +19,8 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - djangonetwork
     environment:
       - POSTGRES_DB=${DB_NAME}
       - POSTGRES_USER=${DB_USER}
@@ -27,9 +31,15 @@ services:
       - "80:80"
     depends_on:
       - web
+    networks:
+      - djangonetwork
     volumes:
       - media-data:/vol/media
 
 volumes:
   media-data:
   postgres-data:
+
+networks:
+      djangonetwork:
+          driver: bridge
