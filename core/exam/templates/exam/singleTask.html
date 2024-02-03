@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://easy-ege.ru/tasks/{{ task.id }}"/>
 <meta property="og:title" content="Задание по физике №{{ task.id }}"/>
 <meta property="og:description"
-      content="{% if task.description|length > 100 %}{{ task.description|slice:100 }}...{% else %}{{ task.description }}{% endif %}"/>
+      content="{{ task.description }}"/>
 {% endblock %}
 
 {% block content %}
