@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>ЕГЭ - Доступ запрещен 403</title>
+<link rel="stylesheet" href="{% static 'exam/css/errors.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="error">
+    <h3 class="error__code">403</h3>
+    <h2 class="error__title">Доступ запрещен!</h2>
+    <p class="error__description">Пожалуйста, вернитесь на <a href="{% url 'index' %}">главную страницу</a></p>
+</div>
+{% endblock %}

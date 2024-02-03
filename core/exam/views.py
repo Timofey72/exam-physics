@@ -53,6 +53,10 @@ def docs(request):
     return render(request, 'exam/docs.html')
 
 
+def csrf_failure(request, reason=""):
+    return render(request, 'errors/403_csrf.html', status=403)
+
+
 def handler404(request, exception):
     return render(request, 'errors/404.html', status=404)
 
