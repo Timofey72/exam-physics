@@ -9,6 +9,11 @@
 <script defer src="{% static 'exam/js/checkAnswer.js' %}"></script>
 <meta name="description"
     content="Вариант №{{ variant.variant_number }}. В нем собраны различные задания в стиле ЕГЭ для тренировки своих знаний.">
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://easy-ege.ru/variants/{{ variant.variant_number }}"/>
+<meta property="og:title" content="Тренировочный вариант по физике №{{ variant.variant_number }}"/>
+<meta property="og:description"
+      content="Тренировочный вариант для подготовки к экзамену по физике. В нем собраны различные задания в стиле ЕГЭ для тренировки своих знаний."/>
 {% endblock %}
 
 {% block content %}
