@@ -29,6 +29,8 @@ DEBUG = True if os.getenv('DEBUG') == 'True' else False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '37.140.241.26', 'easy-ege.ru', 'www.easy-ege.ru']
 
+CSRF_TRUSTED_ORIGINS = ['https://*.easy-ege.ru']
+
 # Application definition
 
 INSTALLED_APPS = [
