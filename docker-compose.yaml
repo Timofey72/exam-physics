@@ -13,10 +13,23 @@ services:
     build: nginx
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - web
     volumes:
       - media-data:/vol/media
+      - ./nginx/:/etc/nginx/conf.d:ro
+      - ./certbot/conf:/etc/letsencrypt/:ro
+      - ./certbot/www:/var/www/certbot/:ro
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt/:rw
+      - ./certbot/www:/var/www/certbot/:rw
+    #command: certonly --webroot --webroot-path=/var/www/certbot/ --email tima.rus-2007@mail.ru --agree-tos --no-eff-email -d easy-ege.ru -d www.easy-ege.ru
+    depends_on:
+      - nginx
 
 volumes:
   media-data:
