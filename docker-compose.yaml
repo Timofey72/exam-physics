@@ -17,9 +17,6 @@ services:
       - web
     volumes:
       - media-data:/vol/media
-      - certbot-data:/var/www/certbot
 
 volumes:
   media-data:
-  certbot-data:
-    driver: local
