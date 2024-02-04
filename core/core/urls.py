@@ -23,7 +23,7 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('exam.urls')),
-    path("robots.txt/", TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),),
+    path("robots.txt", TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),),
 ]
 
 handler404 = 'exam.views.handler404'
