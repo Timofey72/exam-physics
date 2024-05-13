@@ -1,671 +1,1158 @@
 [
 {
-    "model": "exam.taskcategory",
-    "pk": 1,
-    "fields": {
-        "title": "Кинематика"
-    }
-},
-{
-    "model": "exam.taskcategory",
-    "pk": 2,
-    "fields": {
-        "title": "Динамика"
-    }
-},
-{
-    "model": "exam.taskcategory",
-    "pk": 3,
-    "fields": {
-        "title": "Законы сохранения в механике"
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 1,
-    "fields": {
-        "type": 1,
-        "description": "По графику зависимости модуля скорости тела от времени, представленного на рисунке, определите путь, пройденный телом от момента времени 0 с до момента времени 2 с. (Ответ дайте в метрах.)",
-        "image": "tasks/2_1_k0Mf5DD.png",
-        "correct_answer": "3",
-        "category": 1
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 2,
-    "fields": {
-        "type": 1,
-        "description": "На рисунке представлен график зависимости модуля скорости автомобиля от времени. Определите по графику путь, пройденный автомобилем в интервале от момента времени 0 с до момента времени 5 с после начала отсчета времени. (Ответ дайте в метрах.)",
-        "image": "tasks/2_1_kahezkA.png",
-        "correct_answer": "17",
-        "category": 1
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 3,
-    "fields": {
-        "type": 1,
-        "description": "На рисунке представлен график зависимости модуля скорости тела от времени. Какой путь пройден телом за вторую секунду? (Ответ дайте в метрах.)",
-        "image": "tasks/2_1_N5JGbTS.png",
-        "correct_answer": "2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 4,
-    "fields": {
-        "type": 2,
-        "description": "Тело состоит из двух частей, масса которых одинакова. Плотность первой части 3 г/см3, плотность второй части 6 г/см3. Чему равна средняя плотность этого тела? Ответ дайте в г/см3.",
-        "image": "",
-        "correct_answer": "4",
-        "category": 2
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 5,
-    "fields": {
-        "type": 2,
-        "description": "Под действием одной силы F1 тело движется с ускорением 4 м/с2. Под действием другой силы F2, направленной противоположно силе F1, ускорение тела равно 3 м/с2. С каким ускорением тело будет двигаться при одновременном действии сил F1 и F2? Ответ дайте в метрах на секунду в квадрате.",
-        "image": "",
-        "correct_answer": "1",
-        "category": 2
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 6,
-    "fields": {
-        "type": 2,
-        "description": "Тело подвешено на двух нитях и находится в равновесии. Угол между нитями равен 90°, а силы натяжения нитей равны 3 H и 4 H. Чему равна сила тяжести, действующая на тело? (Ответ дайте в ньютонах.)",
-        "image": "",
-        "correct_answer": "5",
-        "category": 2
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 7,
-    "fields": {
-        "type": 3,
-        "description": "Поезд движется со скоростью  а теплоход со скоростью  Масса поезда  Отношение модуля импульса поезда к модулю импульса теплохода равно 5. Чему равна масса теплохода? (Ответ дайте в тоннах.)",
-        "image": "",
-        "correct_answer": "50",
-        "category": 3
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 8,
-    "fields": {
-        "type": 3,
-        "description": "Самолет летит со скоростью  а вертолет со скоростью  Масса самолета  Отношение импульса самолета к импульсу вертолета равно 1,5. Чему равна масса вертолёта? (Ответ дайте в килограммах.)",
-        "image": "",
-        "correct_answer": "4000",
-        "category": 3
-    }
-},
-{
-    "model": "exam.task",
-    "pk": 9,
-    "fields": {
-        "type": 3,
-        "description": "Камень массой 1 кг брошен вертикально вверх с начальной скоростью 4 м/с. На сколько увеличится потенциальная энергия камня от начала движения к тому времени, когда скорость камня уменьшится до 2 м/с? (Ответ дайте в джоулях.)",
-        "image": "",
-        "correct_answer": "6",
-        "category": 3
-    }
-},
-{
-    "model": "exam.variant",
-    "pk": 1,
-    "fields": {
-        "variant_number": 1,
-        "tasks": [
-            1,
-            4,
-            7
-        ]
-    }
-},
-{
-    "model": "exam.variant",
-    "pk": 2,
-    "fields": {
-        "variant_number": 2,
-        "tasks": [
-            2,
-            5,
-            8
-        ]
-    }
-},
-{
-    "model": "exam.variant",
-    "pk": 3,
-    "fields": {
-        "variant_number": 3,
-        "tasks": [
-            3,
-            6,
-            9
-        ]
-    }
-},
-{
-    "model": "exam.variant",
-    "pk": 4,
-    "fields": {
-        "variant_number": 4,
-        "tasks": [
-            1,
-            5,
-            9
-        ]
-    }
-},
-{
-    "model": "exam.variant",
-    "pk": 5,
-    "fields": {
-        "variant_number": 5,
-        "tasks": [
-            2,
-            6,
-            7
-        ]
-    }
-},
-{
-    "model": "exam.formulacategory",
-    "pk": 1,
-    "fields": {
-        "title": "Механика"
-    }
-},
-{
-    "model": "exam.formulacategory",
-    "pk": 2,
-    "fields": {
-        "title": "Молекулярная физика и термодинамика"
-    }
-},
-{
-    "model": "exam.formulacategory",
-    "pk": 3,
-    "fields": {
-        "title": "Физика атомного ядра"
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 1,
-    "fields": {
-        "title": "Давление",
-        "formula": "Р=F/S",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 2,
-    "fields": {
-        "title": "Плотность",
-        "formula": "ρ=m/V",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 3,
-    "fields": {
-        "title": "Давление на глубине жидкости",
-        "formula": "P=ρ∙g∙h",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 4,
-    "fields": {
-        "title": "Сила тяжести",
-        "formula": "Fт=mg",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 5,
-    "fields": {
-        "title": "Архимедова сила",
-        "formula": "Fa=ρж∙g∙Vт",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 6,
-    "fields": {
-        "title": "Уравнение движения  при равноускоренном  движении 1",
-        "formula": "X=X0+υ0∙t+(a∙t2)/2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 7,
-    "fields": {
-        "title": "Уравнение движения  при равноускоренном  движении 2",
-        "formula": "S= (υ2-υ02) /2а",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 8,
-    "fields": {
-        "title": "Уравнение движения  при равноускоренном  движении 3",
-        "formula": "S= (υ+υ0) ∙t /2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 9,
-    "fields": {
-        "title": "Уравнение скорости  при равноускоренном движении",
-        "formula": "υ=υ0+a∙t",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 10,
-    "fields": {
-        "title": "Ускорение",
-        "formula": "a=(υ-υ 0)/t",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 11,
-    "fields": {
-        "title": "Скорость при движении по окружности",
-        "formula": "υ=2πR/Т",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 12,
-    "fields": {
-        "title": "Центростремительное ускорение",
-        "formula": "a=υ2/R",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 13,
-    "fields": {
-        "title": "Связь периода с частотой",
-        "formula": "ν=1/T=ω/2π",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 14,
-    "fields": {
-        "title": "II закон Ньютона",
-        "formula": "F=ma",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 15,
-    "fields": {
-        "title": "Закон Гука",
-        "formula": "Fy=-kx",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 16,
-    "fields": {
-        "title": "Закон Всемирного тяготения",
-        "formula": "F=G∙M∙m/R^2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 17,
-    "fields": {
-        "title": "Вес тела, движущегося с ускорением а(вверх)",
-        "formula": "Р=m(g+a)",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 18,
-    "fields": {
-        "title": "Вес тела, движущегося с ускорением а(вниз)",
-        "formula": "Р=m(g-a)",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 19,
-    "fields": {
-        "title": "Сила трения",
-        "formula": "Fтр=µN",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 20,
-    "fields": {
-        "title": "Импульс тела",
-        "formula": "p=mυ",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 21,
-    "fields": {
-        "title": "Импульс силы",
-        "formula": "Ft=∆p",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 22,
-    "fields": {
-        "title": "Момент силы",
-        "formula": "M=F∙ℓ",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 23,
-    "fields": {
-        "title": "Потенциальная энергия тела, поднятого над землей",
-        "formula": "Eп=mgh",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 24,
-    "fields": {
-        "title": "Потенциальная энергия упруго деформированного тела",
-        "formula": "Eп=kx^2/2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 25,
-    "fields": {
-        "title": "Кинетическая энергия тела",
-        "formula": "Ek=mυ2/2",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 26,
-    "fields": {
-        "title": "Работа",
-        "formula": "A=F∙S∙cosα",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 27,
-    "fields": {
-        "title": "Мощность",
-        "formula": "N=A/t=F∙υ",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 28,
-    "fields": {
-        "title": "Коэффициент полезного действия",
-        "formula": "η=Aп/Аз",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 29,
-    "fields": {
-        "title": "Период колебаний математического маятника",
-        "formula": "T=2π√ℓ/g",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 30,
-    "fields": {
-        "title": "Период колебаний пружинного маятника",
-        "formula": "T=2 π √m/k",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 31,
-    "fields": {
-        "title": "Уравнение гармонических колебаний",
-        "formula": "Х=Хmax∙cos ωt",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 32,
-    "fields": {
-        "title": "Связь длины волны, ее скорости и периода",
-        "formula": "λ= υТ",
-        "category": 1
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 33,
-    "fields": {
-        "title": "Количество вещества",
-        "formula": "ν=N/ Na",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 34,
-    "fields": {
-        "title": "Молярная масса",
-        "formula": "М=m/ν",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 35,
-    "fields": {
-        "title": "Cр. кин. энергия молекул одноатомного газа",
-        "formula": "Ek=3/2∙kT",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 36,
-    "fields": {
-        "title": "Основное уравнение МКТ",
-        "formula": "P=nkT=1/3nm0υ^2",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 37,
-    "fields": {
-        "title": "Закон Гей – Люссака (изобарный процесс)",
-        "formula": "V/T =const",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 38,
-    "fields": {
-        "title": "Закон Шарля (изохорный процесс)",
-        "formula": "P/T=const",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 39,
-    "fields": {
-        "title": "Относительная влажность",
-        "formula": "φ=P/P0∙100%",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 40,
-    "fields": {
-        "title": "Внутр. энергия идеал. одноатомного газа",
-        "formula": "U=3/2∙M/µ∙RT",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 41,
-    "fields": {
-        "title": "Работа газа",
-        "formula": "A=P∙ΔV",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 42,
-    "fields": {
-        "title": "Закон Бойля – Мариотта (изотермический процесс)",
-        "formula": "PV=const",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 43,
-    "fields": {
-        "title": "Количество теплоты при нагревании",
-        "formula": "Q=Cm(T2-T1)",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 44,
-    "fields": {
-        "title": "Количество теплоты при плавлении",
-        "formula": "Q=λm",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 45,
-    "fields": {
-        "title": "Количество теплоты при парообразовании",
-        "formula": "Q=Lm",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 46,
-    "fields": {
-        "title": "Количество теплоты при сгорании топлива",
-        "formula": "Q=qm",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 47,
-    "fields": {
-        "title": "Уравнение состояния идеального газа",
-        "formula": "PV=m/M∙RT",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 48,
-    "fields": {
-        "title": "Первый закон термодинамики",
-        "formula": "ΔU=A+Q",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 49,
-    "fields": {
-        "title": "КПД тепловых двигателей",
-        "formula": "η= (Q1 - Q2)/ Q1",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 50,
-    "fields": {
-        "title": "КПД идеал. двигателей  (цикл Карно)",
-        "formula": "η= (Т1 - Т2)/ Т1",
-        "category": 2
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 51,
-    "fields": {
-        "title": "Закон радиоактивного распада",
-        "formula": "N=N0∙2^-t / T",
-        "category": 3
-    }
-},
-{
-    "model": "exam.formula",
-    "pk": 52,
-    "fields": {
-        "title": "Энергия связи атомных ядер",
-        "formula": "ECB=(Zmp+Nmn-Mя)∙c^2",
-        "category": 3
-    }
+  "model": "exam.taskcategory",
+  "pk": 1,
+  "fields": {
+    "title": "Кинематика"
+  }
+},
+{
+  "model": "exam.taskcategory",
+  "pk": 2,
+  "fields": {
+    "title": "Динамика"
+  }
+},
+{
+  "model": "exam.taskcategory",
+  "pk": 3,
+  "fields": {
+    "title": "Законы сохранения в механике"
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 1,
+  "fields": {
+    "type": 1,
+    "description": "По графику зависимости модуля скорости тела от времени, представленного на рисунке, определите путь, пройденный телом от момента времени 0 с до момента времени 2 с. (Ответ дайте в метрах.)",
+    "image": "tasks/2_1_k0Mf5DD.png",
+    "correct_answer": "3",
+    "category": 1
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 2,
+  "fields": {
+    "type": 1,
+    "description": "На рисунке представлен график зависимости модуля скорости автомобиля от времени. Определите по графику путь, пройденный автомобилем в интервале от момента времени 0 с до момента времени 5 с после начала отсчета времени. (Ответ дайте в метрах.)",
+    "image": "tasks/2_1_kahezkA.png",
+    "correct_answer": "17",
+    "category": 1
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 3,
+  "fields": {
+    "type": 1,
+    "description": "На рисунке представлен график зависимости модуля скорости тела от времени. Какой путь пройден телом за вторую секунду? (Ответ дайте в метрах.)",
+    "image": "tasks/2_1_N5JGbTS.png",
+    "correct_answer": "2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 4,
+  "fields": {
+    "type": 2,
+    "description": "Тело состоит из двух частей, масса которых одинакова. Плотность первой части 3 г/см3, плотность второй части 6 г/см3. Чему равна средняя плотность этого тела? Ответ дайте в г/см3.",
+    "image": "",
+    "correct_answer": "4",
+    "category": 2
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 5,
+  "fields": {
+    "type": 2,
+    "description": "Под действием одной силы F1 тело движется с ускорением 4 м/с2. Под действием другой силы F2, направленной противоположно силе F1, ускорение тела равно 3 м/с2. С каким ускорением тело будет двигаться при одновременном действии сил F1 и F2? Ответ дайте в метрах на секунду в квадрате.",
+    "image": "",
+    "correct_answer": "1",
+    "category": 2
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 6,
+  "fields": {
+    "type": 2,
+    "description": "Тело подвешено на двух нитях и находится в равновесии. Угол между нитями равен 90°, а силы натяжения нитей равны 3 H и 4 H. Чему равна сила тяжести, действующая на тело? (Ответ дайте в ньютонах.)",
+    "image": "",
+    "correct_answer": "5",
+    "category": 2
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 7,
+  "fields": {
+    "type": 3,
+    "description": "Поезд движется со скоростью  а теплоход со скоростью  Масса поезда  Отношение модуля импульса поезда к модулю импульса теплохода равно 5. Чему равна масса теплохода? (Ответ дайте в тоннах.)",
+    "image": "",
+    "correct_answer": "50",
+    "category": 3
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 8,
+  "fields": {
+    "type": 3,
+    "description": "Самолет летит со скоростью  а вертолет со скоростью  Масса самолета  Отношение импульса самолета к импульсу вертолета равно 1,5. Чему равна масса вертолёта? (Ответ дайте в килограммах.)",
+    "image": "",
+    "correct_answer": "4000",
+    "category": 3
+  }
+},
+{
+  "model": "exam.task",
+  "pk": 9,
+  "fields": {
+    "type": 3,
+    "description": "Камень массой 1 кг брошен вертикально вверх с начальной скоростью 4 м/с. На сколько увеличится потенциальная энергия камня от начала движения к тому времени, когда скорость камня уменьшится до 2 м/с? (Ответ дайте в джоулях.)",
+    "image": "",
+    "correct_answer": "6",
+    "category": 3
+  }
+},
+{
+  "model": "exam.variant",
+  "pk": 1,
+  "fields": {
+    "variant_number": 1,
+    "tasks": [
+      1,
+      4,
+      7
+    ]
+  }
+},
+{
+  "model": "exam.variant",
+  "pk": 2,
+  "fields": {
+    "variant_number": 2,
+    "tasks": [
+      2,
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "exam.variant",
+  "pk": 3,
+  "fields": {
+    "variant_number": 3,
+    "tasks": [
+      3,
+      6,
+      9
+    ]
+  }
+},
+{
+  "model": "exam.variant",
+  "pk": 4,
+  "fields": {
+    "variant_number": 4,
+    "tasks": [
+      1,
+      5,
+      9
+    ]
+  }
+},
+{
+  "model": "exam.variant",
+  "pk": 5,
+  "fields": {
+    "variant_number": 5,
+    "tasks": [
+      2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 1,
+  "fields": {
+    "title": "Механика"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 2,
+  "fields": {
+    "title": "Молекулярная физика и термодинамика"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 3,
+  "fields": {
+    "title": "Физика атомного ядра"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 4,
+  "fields": {
+    "title": "Электростатика и электродинамика"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 5,
+  "fields": {
+    "title": "Оптика"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 6,
+  "fields": {
+    "title": "Квантовая физика"
+  }
+},
+{
+  "model": "exam.formulacategory",
+  "pk": 7,
+  "fields": {
+    "title": "СТО"
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 1,
+  "fields": {
+    "title": "Давление",
+    "formula": "Р=F/S",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 2,
+  "fields": {
+    "title": "Плотность",
+    "formula": "ρ=m/V",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 3,
+  "fields": {
+    "title": "Давление на глубине жидкости",
+    "formula": "P=ρ∙g∙h",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 4,
+  "fields": {
+    "title": "Сила тяжести",
+    "formula": "Fт=mg",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 5,
+  "fields": {
+    "title": "Архимедова сила",
+    "formula": "Fa=ρж∙g∙Vт",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 6,
+  "fields": {
+    "title": "Уравнение движения  при равноускоренном  движении 1",
+    "formula": "X=X0+υ0∙t+(a∙t2)/2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 7,
+  "fields": {
+    "title": "Уравнение движения  при равноускоренном  движении 2",
+    "formula": "S= (υ2-υ02) /2а",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 8,
+  "fields": {
+    "title": "Уравнение движения  при равноускоренном  движении 3",
+    "formula": "S= (υ+υ0) ∙t /2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 9,
+  "fields": {
+    "title": "Уравнение скорости  при равноускоренном движении",
+    "formula": "υ=υ0+a∙t",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 10,
+  "fields": {
+    "title": "Ускорение",
+    "formula": "a=(υ-υ 0)/t",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 11,
+  "fields": {
+    "title": "Скорость при движении по окружности",
+    "formula": "υ=2πR/Т",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 12,
+  "fields": {
+    "title": "Центростремительное ускорение",
+    "formula": "a=υ2/R",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 13,
+  "fields": {
+    "title": "Связь периода с частотой",
+    "formula": "ν=1/T=ω/2π",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 14,
+  "fields": {
+    "title": "II закон Ньютона",
+    "formula": "F=ma",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 15,
+  "fields": {
+    "title": "Закон Гука",
+    "formula": "Fy=-kx",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 16,
+  "fields": {
+    "title": "Закон Всемирного тяготения",
+    "formula": "F=G∙M∙m/R^2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 17,
+  "fields": {
+    "title": "Вес тела, движущегося с ускорением а(вверх)",
+    "formula": "Р=m(g+a)",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 18,
+  "fields": {
+    "title": "Вес тела, движущегося с ускорением а(вниз)",
+    "formula": "Р=m(g-a)",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 19,
+  "fields": {
+    "title": "Сила трения",
+    "formula": "Fтр=µN",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 20,
+  "fields": {
+    "title": "Импульс тела",
+    "formula": "p=mυ",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 21,
+  "fields": {
+    "title": "Импульс силы",
+    "formula": "Ft=∆p",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 22,
+  "fields": {
+    "title": "Момент силы",
+    "formula": "M=F∙ℓ",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 23,
+  "fields": {
+    "title": "Потенциальная энергия тела, поднятого над землей",
+    "formula": "Eп=mgh",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 24,
+  "fields": {
+    "title": "Потенциальная энергия упруго деформированного тела",
+    "formula": "Eп=kx^2/2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 25,
+  "fields": {
+    "title": "Кинетическая энергия тела",
+    "formula": "Ek=mυ2/2",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 26,
+  "fields": {
+    "title": "Работа",
+    "formula": "A=F∙S∙cosα",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 27,
+  "fields": {
+    "title": "Мощность",
+    "formula": "N=A/t=F∙υ",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 28,
+  "fields": {
+    "title": "Коэффициент полезного действия",
+    "formula": "η=Aп/Аз",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 29,
+  "fields": {
+    "title": "Период колебаний математического маятника",
+    "formula": "T=2π√ℓ/g",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 30,
+  "fields": {
+    "title": "Период колебаний пружинного маятника",
+    "formula": "T=2 π √m/k",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 31,
+  "fields": {
+    "title": "Уравнение гармонических колебаний",
+    "formula": "Х=Хmax∙cos ωt",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 32,
+  "fields": {
+    "title": "Связь длины волны, ее скорости и периода",
+    "formula": "λ= υТ",
+    "category": 1
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 33,
+  "fields": {
+    "title": "Количество вещества",
+    "formula": "ν=N/ Na",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 34,
+  "fields": {
+    "title": "Молярная масса",
+    "formula": "М=m/ν",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 35,
+  "fields": {
+    "title": "Cр. кин. энергия молекул одноатомного газа",
+    "formula": "Ek=3/2∙kT",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 36,
+  "fields": {
+    "title": "Основное уравнение МКТ",
+    "formula": "P=nkT=1/3nm0υ^2",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 37,
+  "fields": {
+    "title": "Закон Гей – Люссака (изобарный процесс)",
+    "formula": "V/T =const",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 38,
+  "fields": {
+    "title": "Закон Шарля (изохорный процесс)",
+    "formula": "P/T=const",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 39,
+  "fields": {
+    "title": "Относительная влажность",
+    "formula": "φ=P/P0∙100%",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 40,
+  "fields": {
+    "title": "Внутр. энергия идеал. одноатомного газа",
+    "formula": "U=3/2∙M/µ∙RT",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 41,
+  "fields": {
+    "title": "Работа газа",
+    "formula": "A=P∙ΔV",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 42,
+  "fields": {
+    "title": "Закон Бойля – Мариотта (изотермический процесс)",
+    "formula": "PV=const",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 43,
+  "fields": {
+    "title": "Количество теплоты при нагревании",
+    "formula": "Q=Cm(T2-T1)",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 44,
+  "fields": {
+    "title": "Количество теплоты при плавлении",
+    "formula": "Q=λm",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 45,
+  "fields": {
+    "title": "Количество теплоты при парообразовании",
+    "formula": "Q=Lm",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 46,
+  "fields": {
+    "title": "Количество теплоты при сгорании топлива",
+    "formula": "Q=qm",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 47,
+  "fields": {
+    "title": "Уравнение состояния идеального газа",
+    "formula": "PV=m/M∙RT",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 48,
+  "fields": {
+    "title": "Первый закон термодинамики",
+    "formula": "ΔU=A+Q",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 49,
+  "fields": {
+    "title": "КПД тепловых двигателей",
+    "formula": "η= (Q1 - Q2)/ Q1",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 50,
+  "fields": {
+    "title": "КПД идеал. двигателей  (цикл Карно)",
+    "formula": "η= (Т1 - Т2)/ Т1",
+    "category": 2
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 51,
+  "fields": {
+    "title": "Закон радиоактивного распада",
+    "formula": "N=N0∙2^-t / T",
+    "category": 3
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 52,
+  "fields": {
+    "title": "Энергия связи атомных ядер",
+    "formula": "ECB=(Zmp+Nmn-Mя)∙c^2",
+    "category": 3
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 53,
+  "fields": {
+    "title": "Закон Кулона",
+    "formula": "F=k∙q1∙q2/R^2",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 54,
+  "fields": {
+    "title": "Напряженность электрического поля",
+    "formula": "E=F/q",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 55,
+  "fields": {
+    "title": "Напряженность эл. поля точечного заряда",
+    "formula": "E=k∙q/R^2",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 56,
+  "fields": {
+    "title": "Поверхностная плотность зарядов",
+    "formula": "σ = q/S",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 57,
+  "fields": {
+    "title": "Напряженность эл. поля бесконечной плоскости",
+    "formula": "E=2πkσ",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 58,
+  "fields": {
+    "title": "Диэлектрическая проницаемость",
+    "formula": "ε=E0/E",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 59,
+  "fields": {
+    "title": "Потенциальная энергия взаимод. зарядов",
+    "formula": "W= k∙q1q2/R",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 60,
+  "fields": {
+    "title": "Потенциал",
+    "formula": "φ=W/q",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 61,
+  "fields": {
+    "title": "Потенциал точечного заряда",
+    "formula": "φ=k∙q/R",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 62,
+  "fields": {
+    "title": "Напряжение",
+    "formula": "U=A/q",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 63,
+  "fields": {
+    "title": "Для однородного электрического поля",
+    "formula": "U=E∙d",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 64,
+  "fields": {
+    "title": "Электроемкость",
+    "formula": "C=q/U",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 65,
+  "fields": {
+    "title": "Электроемкость плоского конденсатора",
+    "formula": "C=S∙ε∙ε0/d",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 66,
+  "fields": {
+    "title": "Энергия заряженного конденсатора",
+    "formula": "W=qU/2=q²/2С=CU²/2",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 67,
+  "fields": {
+    "title": "Сила тока",
+    "formula": "I=q/t",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 68,
+  "fields": {
+    "title": "Сопротивление проводника",
+    "formula": "R=ρ∙ℓ/S",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 69,
+  "fields": {
+    "title": "Закон Ома для участка цепи",
+    "formula": "I=U/R",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 70,
+  "fields": {
+    "title": "Законы послед. соединения",
+    "formula": "I1=I2=I, U1+U2=U, R1+R2=R",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 71,
+  "fields": {
+    "title": "Законы паралл. соед.",
+    "formula": "U1=U2=U, I1+I2=I, 1/R1+1/R2=1/R",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 72,
+  "fields": {
+    "title": "Мощность электрического тока",
+    "formula": "P=I∙U",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 73,
+  "fields": {
+    "title": "Закон Джоуля-Ленца",
+    "formula": "Q=I2Rt",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 74,
+  "fields": {
+    "title": "Закон Ома для полной цепи",
+    "formula": "I=ε/(R+r)",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 75,
+  "fields": {
+    "title": "Ток короткого замыкания (R=0)",
+    "formula": "I=ε/r",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 76,
+  "fields": {
+    "title": "Вектор магнитной индукции",
+    "formula": "B=Fmax/ℓ∙I",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 77,
+  "fields": {
+    "title": "Сила Ампера",
+    "formula": "Fa=IBℓsin α",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 78,
+  "fields": {
+    "title": "Сила Лоренца",
+    "formula": "Fл=Bqυsin α",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 79,
+  "fields": {
+    "title": "Магнитный поток",
+    "formula": "Ф=BSсosα; Ф=LI",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 80,
+  "fields": {
+    "title": "Закон электромагнитной индукции",
+    "formula": "Ei=ΔФ/Δt",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 81,
+  "fields": {
+    "title": "ЭДС индукции в движ проводнике",
+    "formula": "Ei=Вℓυsinα",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 82,
+  "fields": {
+    "title": "ЭДС самоиндукции",
+    "formula": "Esi=-L∙ΔI/Δt",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 83,
+  "fields": {
+    "title": "Энергия магнитного поля катушки",
+    "formula": "Wм=LI2/2",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 84,
+  "fields": {
+    "title": "Период колебаний кол. контура",
+    "formula": "T=2π ∙√LC",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 85,
+  "fields": {
+    "title": "Индуктивное сопротивление",
+    "formula": "XL=ωL=2πLν",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 86,
+  "fields": {
+    "title": "Емкостное сопротивление",
+    "formula": "Xc=1/ωC",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 87,
+  "fields": {
+    "title": "Действующее значение силы тока",
+    "formula": "Iд=Imax/√2,",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 88,
+  "fields": {
+    "title": "Действующее значение напряжения",
+    "formula": "Uд=Umax/√2",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 89,
+  "fields": {
+    "title": "Полное сопротивление",
+    "formula": "Z=√(Xc-XL)²+R²",
+    "category": 4
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 90,
+  "fields": {
+    "title": "Закон преломления света",
+    "formula": "n21=n2/n1= υ 1/ υ 2",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 91,
+  "fields": {
+    "title": "Показатель преломления",
+    "formula": "n21=sin α/sin γ",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 92,
+  "fields": {
+    "title": "Формула тонкой линзы",
+    "formula": "1/F=1/d + 1/f",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 93,
+  "fields": {
+    "title": "Оптическая сила линзы",
+    "formula": "D=1/F",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 94,
+  "fields": {
+    "title": "max интерференции",
+    "formula": "Δd=kλ",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 95,
+  "fields": {
+    "title": "min интерференции",
+    "formula": "Δd=(2k+1)λ/2",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 96,
+  "fields": {
+    "title": "Диф.решетка",
+    "formula": "d∙sin φ=k λ",
+    "category": 5
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 97,
+  "fields": {
+    "title": "Формула Эйнштейна для фотоэффекта",
+    "formula": "hν=Aвых+Ek, Ek=U₃е",
+    "category": 6
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 98,
+  "fields": {
+    "title": "Красная граница фотоэффекта",
+    "formula": "νк = Aвых/h",
+    "category": 6
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 99,
+  "fields": {
+    "title": "Импульс фотона",
+    "formula": "P=mc=h/ λ=Е/с",
+    "category": 6
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 100,
+  "fields": {
+    "title": "Формула СТО №1",
+    "formula": "t=t₁/√1-υ²/c²",
+    "category": 7
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 101,
+  "fields": {
+    "title": "Формула СТО №2",
+    "formula": "ℓ=ℓ₀∙√1-υ²/c²",
+    "category": 7
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 103,
+  "fields": {
+    "title": "Формула СТО №3",
+    "formula": "υ2=(υ₁+υ)/1+ υ₁∙υ/c²",
+    "category": 7
+  }
+},
+{
+  "model": "exam.formula",
+  "pk": 104,
+  "fields": {
+    "title": "Формула СТО №4",
+    "formula": "Е = mс²",
+    "category": 7
+  }
 }
 ]
