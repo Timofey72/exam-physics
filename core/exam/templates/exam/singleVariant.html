@@ -21,7 +21,7 @@
     <div class="card main-card">
         <h1 style="padding: 0;" class="card__title">Вариант №{{ variant.variant_number }}</h1>
     </div>
-    {% for task in variant.tasks.all %}
+    {% for task in tasks %}
     <div class="card">
         <h2 class="card__title">Тип № {{ task.type }}. Задание №{{ task.id }}</h2>
         <p class="card__text">{{ task.description }}</p>

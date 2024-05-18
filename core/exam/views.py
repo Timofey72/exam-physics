@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import Http404
 
 from .models import Task, TaskCategory, Variant, FormulaCategory
@@ -18,11 +18,10 @@ def variants(request):
 
 
 def single_variant(request, variant_id):
-    variant = Variant.objects.filter(variant_number=variant_id)
-    if not variant.exists():
-        raise Http404("Variant does not exist")
+    variant = get_object_or_404(Variant, variant_number=variant_id)
+    tasks_list = variant.tasks.all().order_by('type')
 
-    context = {'variant': variant.first()}
+    context = {'variant': variant, 'tasks': tasks_list}
     return render(request, 'exam/singleVariant.html', context)
 
 
